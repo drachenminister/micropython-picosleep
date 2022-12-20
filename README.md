@@ -4,20 +4,20 @@ from the internal real time clock of the Raspberry Pico.
 This can be built with the following commands:
 
 ```bash
-git clone https://github.com/ghubcoder/micropython-pico-deepsleep.git
-cd micropython-pico-deepsleep/
+git clone https://github.com/drachenminister/micropython-picosleep.git
+cd micropython-picosleep/
 make -C mpy-cross/
 git submodule update --init -- lib/pico-sdk
 git submodule update --init -- lib/pico-extras
 git submodule update --init -- lib/tinyusb
-cd ports/rp2sleep
+cd ports/rp2
 make -j4
 ```
 
 This will create a `firmware.uf2` file which can then be loaded onto your
 Pico in the usual way using the BOOTSEL button.
 
-A precompiled binary can be found [here](https://github.com/ghubcoder/micropython-pico-deepsleep/releases/tag/v1.1-pico-deepsleep).
+A precompiled binary can be found [here](https://github.com/ghubcoder/micropython-pico-deepsleep/releases/tag/v1.2-pico-deepsleep).
 
 Example usage:
 
