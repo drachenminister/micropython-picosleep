@@ -6,10 +6,8 @@ This can be built with the following commands:
 ```bash
 git clone https://github.com/drachenminister/micropython-picosleep.git
 cd micropython-picosleep/
+make -C ports/rp2 submodules
 make -C mpy-cross/
-git submodule update --init -- lib/pico-sdk
-git submodule update --init -- lib/pico-extras
-git submodule update --init -- lib/tinyusb
 cd ports/rp2
 make -j4
 ```
